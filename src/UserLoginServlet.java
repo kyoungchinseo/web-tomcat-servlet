@@ -22,7 +22,7 @@ public class UserLoginServlet extends HttpServlet {
 		HttpSession session = req.getSession();
 		
 		if (user == null) {
-			resp.sendRedirect("/user/login_failed.html");
+			resp.sendRedirect("/user/login_failed.jsp");
 			return;
 		}
 		
@@ -34,7 +34,7 @@ public class UserLoginServlet extends HttpServlet {
 			resp.sendRedirect("/index.jsp");
 			return;
 		} else {
-			resp.sendRedirect("/user/login_failed.html");
+			resp.sendRedirect("/user/login_failed.jsp");
 			return;
 		}
 		
