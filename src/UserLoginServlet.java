@@ -31,7 +31,7 @@ public class UserLoginServlet extends HttpServlet {
 			session.setAttribute("userId", user.getUserId());
 			session.setAttribute("password", user.getPassword());
 			
-			resp.sendRedirect("/index.html");
+			resp.sendRedirect("/index.jsp");
 			return;
 		} else {
 			resp.sendRedirect("/user/login_failed.html");

@@ -24,7 +24,7 @@ public class UserCreateServlet extends HttpServlet {
 		
 		DataBase.addUser(user);
 		
-		resp.sendRedirect("/index.html");
+		resp.sendRedirect("/index.jsp");
 
 	}
 }
