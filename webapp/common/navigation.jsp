@@ -29,7 +29,7 @@
                         <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                     </ul>
                 </li>
-                <li><a href="../user/list.jsp"><i class="glyphicon glyphicon-user"></i></a></li>
+                <li><a href="/user/list"><i class="glyphicon glyphicon-user"></i></a></li>
             </ul>
         </div>
     </div>
@@ -54,7 +54,7 @@
 	                </c:when>
 	                <c:otherwise>
                 		<li><a href="/user/logout" role="button">로그아웃</a></li>
-                		<li><a href="/user/list" role="button">개인정보수정</a></li>
+                		<li><a href="/user/updateForm?userId=${sessionScope.userId}" role="button">개인정보수정</a></li>
                		</c:otherwise>
             	</c:choose>
             </ul>
